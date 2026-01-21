@@ -1,5 +1,3 @@
-
-
 public class Employee {
 
     private final int id;
