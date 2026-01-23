@@ -1,0 +1,18 @@
+a. 
+- When I change from principal = 17000; to principal = 17000.0;, the program still compiles and runs correctly. 
+
+- The reason for it is, the variable principal is declared as a double (double principal;)
++ In the original code (principal = 17000;), Java automatically performs a "widening conversion," treating the integer 17000 as the double 17000.0.
++ In the change (principal = 17000.0;), I am simply assigning a double literal directly to a double variable. Since the data types match perfectly, it works just fine.
+
+b. 
+- When I change from double principal; to int principal;, the program fails to compile. There is an error message, either "incompatible types", or "type mismatch".
+
+- The reason for it, is from the error occurs at Line 19: principal = principal + interest;.
++ The Calculation: I am adding principal (now an int) to interest (which is a double). In Java, when adding an integer and a double, the result is automatically promoted to a double.
++ The Assignment: I am trying to store that resulting double back into principal, which I changed to an int. Java does not allow users to automatically stuff a decimal number (double) into an integer variable because he/she would lose the data after the decimal point.
+
+- There is a way to fix this code, that is, use type casting. Java must be explicitly told to convert the result back into an integer (which will chop off the decimal part).
+
+- For instance: 
+principal = (int) (principal + interest);

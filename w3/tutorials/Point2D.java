@@ -1,3 +1,5 @@
+package tutorials;
+
 import java.util.Scanner;
 
 public class Point2D {

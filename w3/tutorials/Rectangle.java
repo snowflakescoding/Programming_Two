@@ -1,3 +1,5 @@
+package tutorials;
+
 public class Rectangle {
 
     private float length = 1.0f;
