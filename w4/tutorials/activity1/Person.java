@@ -1,6 +1,7 @@
 package activity1;
 
 public class Person {
+
     private final String name;
     private String address;
 

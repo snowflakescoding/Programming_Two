@@ -1,6 +1,7 @@
 package activity1;
 
 public class Student extends Person {
+
     private String program;
     private int year;
     private double fee;
