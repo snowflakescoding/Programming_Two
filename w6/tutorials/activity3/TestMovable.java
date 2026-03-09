@@ -1,5 +1,3 @@
-package week06;
-
 public class TestMovable {
     public static void main(String[] args) {
         MovablePoint p1 = new MovablePoint(1, 2);
